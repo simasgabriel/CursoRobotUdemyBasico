@@ -5,7 +5,8 @@ Library    SeleniumLibrary
 *** Variables ***
 ${URL}    https://www.amazon.com.br/
 ${eletronicos}    //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]
-${h1}    Eletrônicos e Tecnologia
+${h1}      //h1[contains(.,'Eletrônicos e Tecnologia')] 
+${nomeProduto}
 
 
 
@@ -29,3 +30,21 @@ Verificar se aparece a frase "Eletrônicos e Tecnologia"
     Wait Until Page Contains    text= Eletrônicos e Tecnologia
     Wait Until Element Is Visible    locator=${h1}
 
+Verificar se o título da página fica "${titulo}"
+    Title Should Be     ${titulo}
+
+Verificar se aparece a categoria "${nomeCategoria}"
+    Element Should Be Visible  locator=//a[@aria-label='${nomeCategoria}']
+
+
+Digitar o nome de produto "${nomeProduto}" no campo de pesquisa
+    Input Text    locator=//input[contains(@type,'text')]    text=${nomeProduto}
+
+Clicar no botão de pesquisa
+    Click Element    locator=//input[contains(@type,'submit')]
+
+Verificar se o resultado da pesquisa,lista o produto pesquisado
+   Wait Until Page Contains    text= ${nomeProduto}
+    
+
+    
