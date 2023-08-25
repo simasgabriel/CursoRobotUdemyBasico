@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20230825 12:59:44.683" rpa="false" schemaversion="4">
+<suite id="s1" name="amazonTestes" source="C:\Users\8820948\Documents\GitHub\CursoRobotUdemyBasico\webtesting\amazonTestes.robot">
+<test id="s1-t1" name="Caso de teste 01- Acesso ao menu &quot;Eletrônicos&quot;" line="8">
+<kw name="Abrir o navegador" library="amazonResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230825 12:59:44.905" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
+<status status="PASS" starttime="20230825 12:59:44.905" endtime="20230825 12:59:48.068"/>
+</kw>
+<status status="PASS" starttime="20230825 12:59:44.905" endtime="20230825 12:59:48.069"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br">
+<msg timestamp="20230825 12:59:48.073" level="FAIL">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</msg>
+<status status="FAIL" starttime="20230825 12:59:48.073" endtime="20230825 12:59:48.074"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;">
+<status status="NOT RUN" starttime="20230825 12:59:48.076" endtime="20230825 12:59:48.076"/>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Eletrônicos e Tecnologia |Amazon.com.br&quot;">
+<status status="NOT RUN" starttime="20230825 12:59:48.078" endtime="20230825 12:59:48.078"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;">
+<status status="NOT RUN" starttime="20230825 12:59:48.081" endtime="20230825 12:59:48.081"/>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Computadores e Informática&quot;">
+<status status="NOT RUN" starttime="20230825 12:59:48.085" endtime="20230825 12:59:48.085"/>
+</kw>
+<kw name="Fechar o navegador" library="amazonResources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230825 12:59:48.086" endtime="20230825 12:59:50.156"/>
+</kw>
+<status status="PASS" starttime="20230825 12:59:48.085" endtime="20230825 12:59:50.156"/>
+</kw>
+<doc>Esse teste verifica o menu eletrônicos do site da amazon
+teste segunda linha</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" starttime="20230825 12:59:44.904" endtime="20230825 12:59:50.157">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</test>
+<test id="s1-t2" name="Caso de teste 02- Pesquisa de um Produto" line="21">
+<kw name="Abrir o navegador" library="amazonResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230825 12:59:50.158" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
+<status status="PASS" starttime="20230825 12:59:50.158" endtime="20230825 12:59:51.542"/>
+</kw>
+<status status="PASS" starttime="20230825 12:59:50.158" endtime="20230825 12:59:51.542"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br">
+<msg timestamp="20230825 12:59:51.546" level="FAIL">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</msg>
+<status status="FAIL" starttime="20230825 12:59:51.546" endtime="20230825 12:59:51.546"/>
+</kw>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa">
+<status status="NOT RUN" starttime="20230825 12:59:51.549" endtime="20230825 12:59:51.549"/>
+</kw>
+<kw name="Clicar no botão de pesquisa">
+<status status="NOT RUN" starttime="20230825 12:59:51.552" endtime="20230825 12:59:51.552"/>
+</kw>
+<kw name="Verificar se o resultado da pesquisa,lista o produto pesquisado">
+<status status="NOT RUN" starttime="20230825 12:59:51.554" endtime="20230825 12:59:51.554"/>
+</kw>
+<kw name="Fechar o navegador" library="amazonResources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230825 12:59:51.555" endtime="20230825 12:59:53.625"/>
+</kw>
+<status status="PASS" starttime="20230825 12:59:51.554" endtime="20230825 12:59:53.626"/>
+</kw>
+<doc>Esse teste verifica a busca de um Produto do site</doc>
+<tag>busca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" starttime="20230825 12:59:50.157" endtime="20230825 12:59:53.627">No keyword with name 'Acessar a home page do site Amazon.com.br' found.</status>
+</test>
+<doc>Essa suíte testa o site da amazon.com.br</doc>
+<status status="FAIL" starttime="20230825 12:59:44.685" endtime="20230825 12:59:53.630"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">busca_produtos</stat>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">lista_busca</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="amazonTestes">amazonTestes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
