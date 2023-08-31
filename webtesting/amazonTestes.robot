@@ -2,7 +2,7 @@
 Documentation    Essa suíte testa o site da amazon.com.br 
 Resource         amazonResources.robot
 Test Setup       Abrir o navegador
-#Test Teardown    Fechar o navegador
+Test Teardown    Fechar o navegador
 
 *** Test Cases ***
 Caso de teste 01- Acesso ao menu "Eletrônicos"

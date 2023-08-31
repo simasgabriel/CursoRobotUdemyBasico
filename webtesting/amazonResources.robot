@@ -16,6 +16,7 @@ Abrir o navegador
     Maximize Browser Window
 
 Fechar o navegador
+    Capture Page Screenshot
     Close Browser   
 
 Acessar a home page do site Amazon.com.br
@@ -38,10 +39,10 @@ Verificar se aparece a categoria "${nomeCategoria}"
 
 
 Digitar o nome de produto "${nomeProduto}" no campo de pesquisa
-    Input Text    locator=//input[contains(@type,'text')]    text=${nomeProduto}
-
+    Input Text    locator=twotabsearchtextbox   text=${nomeProduto}
+    
 Clicar no botão de pesquisa
-    Click Element    locator=//input[contains(@type,'submit')]
+    Click Element    locator=nav-search-submit-button
 
 Verificar se o resultado da pesquisa,lista o produto pesquisado
    Wait Until Page Contains    text= ${nomeProduto}
